@@ -94,65 +94,7 @@
   </style>
 </head>
 <body>
-  <header>
-    <nav id="barra" class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img id="logo" src="../images/logo_mascotitas.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item dropdown">
-                        <a id="barra" class="nav-link dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown">Productos</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="alimento.html">Alimento</a></li>
-                            <li><a class="dropdown-item" href="delimpieza.html">De limpieza</a></li>
-                            <li><a class="dropdown-item" href="vacunas.html">Vacunas</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a id="barra" class="nav-link dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown">Servicios</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="salud.html">Salud</a></li>
-                            <li><a class="dropdown-item" href="estetica.html">Estética</a></li>
-                            <li><a class="dropdown-item" href="vacunacion.html">Vacunación</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a id="barra" class="nav-link dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown">Quiénes somos</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="nuestroequipo.html">Nuestro equipo</a></li>
-                            <li><a class="dropdown-item" href="historia.html">Historia</a></li>
-                            <li><a class="dropdown-item" href="patrocinios.html">Patrocinios</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a id="barra" class="nav-link" href="contactanos.html">Contáctanos</a>
-                    </li>
-                    <li class="nav-item">
-                        <button id="barra" class="nav-link" href="contactanos.html" data-bs-toggle="offcanvas" data-bs-target="#demo"><i class="bi bi-list"></i></button>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item">
-                        <a id="barra" class="nav-link" href="iniciarSesion_Registrarse.html">Iniciar Sesión</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="boton_registrarse" class="nav-link btn" href="iniciarSesion_Registrarse.html">Registrarse</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
+  <div id="base-container"></div>
 
   <h1 id="titulo_citas">Agendar Cita</h1>
 
@@ -265,7 +207,7 @@
       
     </div>
 </div>
-
+<script src="../js/script.js"></script>
   <script>
     function validarDia() {
       var diaInput = document.getElementById("dia");

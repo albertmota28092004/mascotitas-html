@@ -8,13 +8,27 @@
     font-family: 'Outfit', sans-serif;
 }
 
-/*---------------------------INDEX---------------------------------*/
+/*---------------------------INDEX-----------------------------------------------------------------------------------*/
 
 /*Barra de navegación y banner principal*/
-#barra{
+.barra{
     background-color:#FFFFFF !important;
     color: black !important;
     width: 100% !important;
+}
+
+.apartados_index {
+    display: inline-block;
+}
+
+#menu_hamburguesa{
+    display: none;
+}
+
+#botones_registrarse_iniciarsesion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas con igual anchura */
+    gap: 10px; /* Espacio entre los botones */
 }
 
 #logo {
@@ -35,7 +49,6 @@
 }
 
 #boton_registrarse {
-    width: 100% !important;
     background-color: #8F82B7 !important; 
     color: white !important;
 }
@@ -47,6 +60,8 @@
 }
 
 /*Nuestros productos*/
+
+
 
 #seccion_productos {
     margin-top: 610px;
@@ -63,11 +78,11 @@
     margin: auto;
 }
 
-#contenedor__producto{
+.contenedor__producto{
     display:block;
 }
 
-#boton_comprar {
+.boton_comprar {
     border: solid 2px transparent;
     color: #000000;
     display: block;
@@ -79,7 +94,7 @@
     outline: none;
 }
 
-#boton_comprar:hover {
+.boton_comprar:hover {
     background-color: #ffdaf375;
     border: 2px solid #FFDAF3;
     color: #0000003d;
@@ -118,6 +133,39 @@
     text-align: center;
 }
 
+@media (max-width: 1450px) {
+    .equipo {
+        width: 100%;
+        max-width: none;
+        height: auto;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .equipo h4 {
+        position: relative;
+        top: 0; /* Restaura la posición original del nombre */
+    }
+}
+
+@media (max-width: 780px) {
+
+    #botones_registrarse_iniciarsesion {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+
+
+    .apartados_index {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    #menu_hamburguesa{
+        display:block !important;
+    }
+}
 /*Agendar cita*/
 
 #banner_cita {
@@ -136,6 +184,7 @@
 }
 
 /*Contáctanos*/
+
 
 #contenedor__contactanos {
     justify-content: center;
@@ -173,6 +222,14 @@
     border: solid 2px #231F20;
 }
 
+@media (max-width: 1408px) {
+    #contenedor__contactanos{
+        margin-left: 80px;
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 footer {
     margin-top: 100px;
@@ -181,8 +238,97 @@ footer {
 
 }
 
-#demo {
-    border: 2px solid transparent;
+
+/*-----------------------------------ALIMENTO----------------------------------------------------------*/
+
+
+.imagen_alimento{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
 }
 
 
+.boton_comprar_alimento {
+    border: solid 2px transparent;
+    color: #FFFFFF;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    background-color: #8F82B7;
+    width: 320px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.boton_comprar_alimento:hover {
+    background-color: #FFFFFF !important; 
+    color:#8F82B7 !important;
+    border: solid 2px #8F82B7;
+}
+
+/* Estilos para el filtro */
+.filter-sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+    padding: 10px;
+    border: 2px solid #ececec;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 20px #ececec;
+}
+
+.filter-sidebar h2 {
+    font-size: 18px;
+}
+
+.filter-sidebar label {
+    margin-left: 100px;
+    font-weight: 2px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.filter-sidebar select {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-right: 200px;
+}
+.filter-sidebar select:hover{
+    background-color:#ececec;
+
+}
+
+
+/* Estilos para los botones de filtro */
+.filter-sidebar button {
+    background-color: #8F82B7;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filter-sidebar button:hover {
+    background-color: #5E4C7C;
+}
+
+/* Estilos para el contenido principal */
+.content {
+    padding: 20px;
+}
+
+
+
+/* Resto de tus estilos CSS */

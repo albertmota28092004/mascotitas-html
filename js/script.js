@@ -62,3 +62,40 @@ function customAlert() {
     overlay.appendChild(box);
     document.body.appendChild(overlay);
 }
+
+        
+fetch('base.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('base-container').innerHTML = data;
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const especieSelect = document.getElementById("especie");
+    const tamañoSelect = document.getElementById("tamaño");
+    const productos = document.querySelectorAll(".producto");
+
+    function filtrarProductos() {
+        const especieFiltro = especieSelect.value;
+        const tamañoFiltro = tamañoSelect.value;
+
+        productos.forEach(producto => {
+            const especieProducto = producto.classList.contains(especieFiltro);
+            const tamañoProducto = producto.classList.contains(tamañoFiltro);
+
+            if ((especieFiltro === "todos" || especieProducto) &&
+                (tamañoFiltro === "todos" || tamañoProducto)) {
+                producto.style.display = "block";
+            } else {
+                producto.style.display = "none";
+            }
+        });
+    }
+
+    especieSelect.addEventListener("change", filtrarProductos);
+    tamañoSelect.addEventListener("change", filtrarProductos);
+
+    // Filtrar productos al cargar la página
+    filtrarProductos();
+});
+
