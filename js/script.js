@@ -70,6 +70,12 @@ fetch('base.html')
     document.getElementById('base-container').innerHTML = data;
 });
 
+fetch('base_admin.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('base-container_admin').innerHTML = data;
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const especieSelect = document.getElementById("especie");
     const tamañoSelect = document.getElementById("tamaño");
