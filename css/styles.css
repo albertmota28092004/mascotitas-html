@@ -160,10 +160,10 @@
     }
 }
 
-@media (max-width: 500px) {
-    
-    #menu_hamburguesa{
-        display:block !important;
+@media (max-width: 575.20px) {
+
+    #menu_hamburguesa {
+        display: inline-block;
     }
 }
 /*Agendar cita*/
