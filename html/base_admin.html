@@ -27,7 +27,7 @@
                 <div>
                     <ul class="collapse navbar-collapse">
                         <li class="nav-link">
-                            <button id="menu_hamburguesa" class="barra nav-link" href="contactanos.html"
+                            <button id="menu_hamburguesa" class="barra nav-link"
                                 data-bs-toggle="offcanvas" data-bs-target="#demo"><i class="bi bi-list"></i></button>
                         </li>
                     </ul>
@@ -80,7 +80,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="barra nav-link" class="glyphicon glyphicon-user" href="javascript:void(0)"
+                                <a class="barra nav-link glyphicon glyphicon-user" href="javascript:void(0)"
                                     data-bs-toggle="modal" data-bs-target="#myModal2">Cerrar sesión <i
                                         class="bi bi-box-arrow-right"></i></a>
                             </li>
@@ -90,6 +90,53 @@
             </div>
         </nav>
     </header>
+
+    <!-- Offcanvas Sidebar -->
+<div class="offcanvas offcanvas-start" id="demo">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">Menú</h1>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            <h5>Productos</h5>
+            <ul>
+                <li><a class="nav-link" href="alimento.html">Alimento</a></li>
+                <li><a class="nav-link" href="delimpieza.html">De limpieza</a></li>
+                <li><a class="nav-link" href="vacunas.html">Vacunas</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>Servicios</h5>
+            <ul>
+                <li><a class="nav-link" href="salud.html">Salud</a></li>
+                <li><a class="nav-link" href="estetica.html">Estética</a></li>
+                <li><a class="nav-link" href="vacunacion.html">Vacunación</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>Quiénes somos</h5>
+            <ul>
+                <li><a class="nav-link" href="nuestroequipo.html">Nuestro equipo</a></li>
+                <li><a class="nav-link" href="historia.html">Historia</a></li>
+                <li><a class="nav-link" href="nuestroequipo.html">Nuestro equipo</a></li>
+            </ul>
+        </div>
+        <h5><a class="nav-link" href="contactanos.html">Contáctanos</a></h5>
+
+    </div>
+  </div>
+
+    <!-- The Modal Cerrar sesión-->
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Cerrar sesión</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
 
     <script src="../js/script.js"></script>
 
