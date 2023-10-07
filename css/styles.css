@@ -59,6 +59,12 @@
     border: solid 2px #8F82B7;
 }
 
+.titulos_apartados {
+    font-size: 45.15px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 /*Nuestros productos*/
 
 
@@ -67,7 +73,7 @@
     margin-top: 800px;
 }
 
-#titulo_lista-productos{
+.titulo_lista-productos{
     font-size: 45.15px;
     text-align: center;
     margin-bottom: 50px;
@@ -84,20 +90,20 @@
 
 .boton_comprar {
     border: solid 2px transparent;
-    color: #000000;
+    background-color: #8F82B7 !important; 
+    color: white !important;
     display: block;
     justify-content: center;
     margin: auto;
-    background-color: #FFDAF3;
     width: 400px;
     margin-bottom: 10px;
     outline: none;
 }
 
 .boton_comprar:hover {
-    background-color: #ffdaf375;
+    background-color: #FFFFFF !important; 
+    color:#8F82B7 !important;
     border: 2px solid #FFDAF3;
-    color: #0000003d;
 }
 
 /*SOBRE NOSOTROS*/
@@ -239,6 +245,7 @@ footer {
     width: 200px;
     text-align: center;
     justify-content: center;
+    margin-left: 70px;
 }
 
 
@@ -323,4 +330,6 @@ footer {
 
 
 
-/* Resto de tus estilos CSS */
+/*----------------------------SERVICIOS-----------------------------*/
+
+/* Estilos generales */

@@ -23,111 +23,109 @@
             </ol>
         </nav>
     </div>
+    <h1 class="titulo_lista-productos">Catálogo de productos de limpieza para mascotas</h1>
 
-    <main>
-        <section>
-        </section>
-        <section>
-        </section>
-        <section>
-        </section>
-    </main>
+    <div class="filter-sidebar">
+        <h2>Filtrar Productos</h2>
+        <label for="especie">Especie:</label>
+        <select id="especie">
+            <option value="todos">Todos</option>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+        </select>
 
-    <!-- The Modal Login-->
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Iniciar sesión</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-        
-                <!-- Modal body -->
-                <div class="container mt-3">
-                    <h2>Ingresa tus datos:</h2>
-                    <form action="" class="mb-3">
-                        <div class="input-group mb-3 mt-3">
-                            <div class="input-group-text">
-                                <i class="bi bi-person-circle"></i>
-                            </div>
-                            <input id="usuario" type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Nombre de usuario">
-                        </div>
-                          
-                          <div class="input-group mb-3">
-                            <div class="input-group-text">
-                                <i class="bi bi-key"></i>
-                            </div>
-                            <input id="contraseña" type="password" class="form-control" aria-label="Text input with radio button" placeholder="Contraseña">
-                        </div>
-                        <div class="form-check mb-3">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" name="remember"> Recuérdame
-                            </label>
-                        </div>
-                        <input type="submit" class="btn btn-primary" value="Iniciar sesión" onclick="validarUsuario()">
-                    </form>
-                </div>
-            </div>
-        </div>
+        <label for="tamaño">Tamaño:</label>
+        <select id="tamaño">
+            <option value="todos">Todos</option>
+            <option value="pequeño">Pequeño</option>
+            <option value="mediano">Mediano</option>
+            <option value="grande">Grande</option>
+        </select>
     </div>
-
-    <!-- The Modal Register-->
-    <div class="modal" id="myModal2">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Regístrate</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-        
-                <!-- Modal body -->
-                <div class="container mb-3">
-                    <h2>Crea tu cuenta:</h2>
-                    <form action="" class="mb-3">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
-                            <input type="text" class="form-control" placeholder="Nombre de usuario">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
-                            <input type="text" class="form-control" placeholder="Nombres">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
-                            <input type="text" class="form-control" placeholder="Apellidos">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-calendar"></i></i></span>
-                            <input type="date" class="form-control" placeholder="Fecha de nacimiento">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-gender-ambiguous"></i></i></i></span>
-                            <select class="form-select" id="inputGroupSelect01">
-                                <option selected>Género</option>
-                                <option value="1">Masculino</option>
-                                <option value="2">Femenino</option>
-                                <option value="3">Otro</option>
-                              </select>
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-key"></i></span>
-                            <input type="password" class="form-control" placeholder="Contraseña"><i class="bi bi-eye"></i>
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-key"></i></span>
-                            <input type="password" class="form-control" placeholder="Confirmar contraseña"><i class="bi bi-eye"></i>
-                        </div>
-                        <div class="form-check mb-3">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" name="remember"> Recuérdame
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-primary" id="contraseña=">Enviar</button>
-                    </form>
-                </div>
-            </div>
+    <div class="row content">
+        <div class="producto_alimento col-md-3 producto gato perro pequeño mediano grande">
+            <h3>Pañitos Humedos Familia Mascotas Petys</h3>
+            <h3>$20.000</h3>
+            <img class="imagen_alimento" src="../images/delimpieza/producto1.png" alt="">
+            <button type="button" class="boton_comprar_alimento btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal2">Comprar</button>
+        </div>
+        <div class="producto_alimento col-md-3 producto perro grande">
+            <h3>Dentalife Perro Grande 7 Uni 220 G</h3>
+            <h3>$30.000</h3>
+            <img class="imagen_alimento" src="../images/delimpieza/producto2.png" alt="">
+            <button type="button" class="boton_comprar_alimento btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal2">Comprar</button>
+        </div>
+        <div class="producto_alimento col-md-3 producto gato mediano grande">
+            <h3>Pack de productos de limpieza</h3>
+            <h3>$100.000</h3>
+            <img class="imagen_alimento" src="../images/delimpieza/producto3.png" alt="">
+            <button type="button" class="boton_comprar_alimento btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal2">Comprar</button>
+        </div>
+        <div class="producto_alimento col-md-3 producto perro gato pequeño mediano grande">
+            <h3>Shampoo Petys de 235 ml para Perros y Gatos</h3>
+            <h3>$20.000</h3>
+            <img class="imagen_alimento" src="../images/delimpieza/producto4.jpg" alt="">
+            <button type="button" class="boton_comprar_alimento btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal2">Comprar</button>
+        </div>
+        <div class="producto_alimento col-md-3 producto gato pequeño mediano grande">
+            <h3>Shampoo Beeps Para Gatos </h3>
+            <h3>$43.000</h3>
+            <img class="imagen_alimento" src="../images/delimpieza/producto5.jpg" alt="">
+            <button type="button" class="boton_comprar_alimento btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal2">Comprar</button>
+        </div>
+        <div class="producto_alimento col-md-3 producto gato perro pequeño mediano grande">
+            <h3>Clorhexin Shampoo Medicado</h3>
+            <h3>$31.000</h3>
+            <img class="imagen_alimento" src="../images/delimpieza/producto6.jpg" alt="">
+            <button type="button" class="boton_comprar_alimento btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal2">Comprar</button>
+        </div>
+        <div class="producto_alimento col-md-3 producto gato perro pequeño mediano grande">
+            <h3>Petys Spray Eliminador de Olores</h3>
+            <h3>$10.000</h3>
+            <img class="imagen_alimento" src="../images/delimpieza/producto7.jpg" alt="">
+            <button type="button" class="boton_comprar_alimento btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal2">Comprar</button>
+        </div>
+        <div class="producto_alimento col-md-3 producto perro pequeño mediano grande">
+            <h3>Destastik Cuidado Dental Perros</h3>
+            <h3>$35.000</h3>
+            <img class="imagen_alimento" src="../images/delimpieza/producto8.jpg" alt="">
+            <button type="button" class="boton_comprar_alimento btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal2">Comprar</button>
+        </div>
+        <div class="producto_alimento col-md-3 producto perro pequeño mediano grande">
+            <h3>Petys Shampoo Limpieza y Suavidad Para Mascotas</h3>
+            <h3>$21.000</h3>
+            <img class="imagen_alimento" src="../images/delimpieza/producto9.webp" alt="">
+            <button type="button" class="boton_comprar_alimento btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal2">Comprar</button>
+        </div>
+        <div class="producto_alimento col-md-3 producto gato perro pequeño mediano grande">
+            <h3>Toallitas de Limpieza para Mascotas</h3>
+            <h3>$5.000</h3>
+            <img class="imagen_alimento" src="../images/delimpieza/producto10.webp" alt="">
+            <button type="button" class="boton_comprar_alimento btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal2">Comprar</button>
+        </div>
+        <div class="producto_alimento col-md-3 producto perro pequeño mediano grande">
+            <h3>Shampoo Insecticida 230mL</h3>
+            <h3>$50.000</h3>
+            <img class="imagen_alimento" src="../images/delimpieza/producto11.png" alt="">
+            <button type="button" class="boton_comprar_alimento btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal2">Comprar</button>
+        </div>
+        <div class="producto_alimento col-md-3 gato pequeño mediano grande">
+            <h3>PURINA® DENTALIFE® snacks de pollo para gatos</h3>
+            <h3>$30.000</h3>
+            <img class="imagen_alimento" src="../images/delimpieza/producto12.webp" alt="">
+            <button type="button" class="boton_comprar_alimento btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal2">Comprar</button>
         </div>
     </div>
 
@@ -135,41 +133,7 @@
         <h6>+Cotitas S.A.</h6>
         <h6>Todos los derechos reservados ®</h6>
     </footer>
-
-    <div class="offcanvas offcanvas-start" id="demo">
-        <div class="offcanvas-header">
-          <h1 class="offcanvas-title">Menú</h1>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                <h5>Productos</h5>
-                <ul>
-                    <li><a class="nav-link" href="alimento.html">Alimento</a></li>
-                    <li><a class="nav-link" href="delimpieza.html">De limpieza</a></li>
-                    <li><a class="nav-link" href="vacunas.html">Vacunas</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5>Servicios</h5>
-                <ul>
-                    <li><a class="nav-link" href="salud.html">Salud</a></li>
-                    <li><a class="nav-link" href="estetica.html">Estética</a></li>
-                    <li><a class="nav-link" href="vacunacion.html">Vacunación</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5>Quiénes somos</h5>
-                <ul>
-                    <li><a class="nav-link" href="nuestroequipo.html">Nuestro equipo</a></li>
-                    <li><a class="nav-link" href="historia.html">Historia</a></li>
-                    <li><a class="nav-link" href="nuestroequipo.html">Nuestro equipo</a></li>
-                </ul>
-            </div>
-            <h5><a class="nav-link" href="contactanos.html">Contáctanos</a></h5>
-          
-        </div>
-    </div>
+    
 
     <script src="../js/script.js"></script>
 </body>

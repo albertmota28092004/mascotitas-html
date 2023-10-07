@@ -104,4 +104,3 @@ document.addEventListener("DOMContentLoaded", function () {
     // Filtrar productos al cargar la página
     filtrarProductos();
 });
-
