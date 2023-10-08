@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas</title>
+</head>
+
+<body>
+
+    <div>
+        <button onclick="mostrar(1)">Información del Cliente</button>
+        <button onclick="mostrar(2)">Información de la Mascota</button>
+        <button onclick="mostrar(3)">Información de la Cita</button>
+    </div>
+
+    <div id="text1" class="text">
+        uno
+        <button onclick="siguiente()">Siguiente</button>
+    </div>
+
+    <div id="text2" class="text">
+        dos
+        <button onclick="anterior()">Anterior</button>
+        <button onclick="siguiente()">Siguiente</button>
+    </div>
+
+    <div id="text3" class="text">
+        tres
+        <button onclick="anterior()">Anterior</button>
+    </div>
+
+    <script>
+        // Mueve la parte del código para ocultar text2 y text3 aquí
+        document.getElementById("text2").style.display = "none";
+        document.getElementById("text3").style.display = "none";
+
+        function siguiente() {
+            let text1 = document.getElementById("text1");
+            let text2 = document.getElementById("text2");
+            let text3 = document.getElementById("text3");
+
+            if (text1.style.display !== "none") {
+                text1.style.display = "none";
+                text2.style.display = "block";
+            } else if (text2.style.display !== "none") {
+                text2.style.display = "none";
+                text3.style.display = "block";
+            }
+        }
+
+        function anterior() {
+            let text1 = document.getElementById("text1");
+            let text2 = document.getElementById("text2");
+            let text3 = document.getElementById("text3");
+
+            if (text3.style.display !== "none") {
+                text3.style.display = "none";
+                text2.style.display = "block";
+            } else if (text2.style.display !== "none") {
+                text2.style.display = "none";
+                text1.style.display = "block";
+            }
+        }
+
+        function mostrar(numero) {
+            let text1 = document.getElementById("text1");
+            let text2 = document.getElementById("text2");
+            let text3 = document.getElementById("text3");
+
+            if (numero == 1) {
+                text1.style.display = "block";
+                text2.style.display = "none";
+                text3.style.display = "none";
+            } else if (numero == 2) {
+                text2.style.display = "block";
+                text1.style.display = "none";
+                text3.style.display = "none";
+            } else if (numero == 3) {
+                text3.style.display = "block";
+                text2.style.display = "none";
+                text1.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

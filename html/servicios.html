@@ -14,79 +14,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="../css/styles.css" rel="stylesheet">
     <title>+Cotitas - Servicios</title>
-    <style>
-        /* Estilos de la barra de navegación */
-        .barra-navegacion {
-            position: absolute;
-            height: 200px;
-            width: 250px;
-            color: black;
-        }
-
-        .barra-navegacion ul {
-            list-style-type: none;
-        }
-
-        .barra-navegacion ul li {
-            padding: 10px;
-        }
-
-        .barra-navegacion ul li a {
-            text-decoration: none;
-            color: #000000;
-        }
-
-        #salud,
-        #estetica,
-        #vacunacion {
-            margin-left: 250px;
-            padding: 20px;
-            position: relative;
-        }
-
-        .tarjetas {
-            border: 2px solid #000000;
-            position: relative;
-            width: 200px;
-            height: 200px;
-            border-radius: 20px;
-            padding: 10px;
-            margin-left: 200px;
-            display: flex;
-            flex-wrap: nowrap;
-        }
-
-        #num_1 {
-            display: absolute;
-            margin-top: 20px;
-            z-index: 1;
-        }
-
-        #num_2 {
-            display: absolute;
-            margin-left: 378px;
-            margin-top: -210px;
-            z-index: 2;
-        }
-
-        #num_3 {
-            display: absolute;
-            margin-top: 20px;
-            margin-left: 560px;
-            margin-top: -190px;
-            z-index: 1;
-        }
-
-        .botones{
-            position: absolute;
-            margin-top: 130px;
-            width: 180px;
-            height: 40px;
-            border-radius: 20px;
-            padding: 0px;
-        }
-        /* Resto de los estilos CSS */
-    </style>
 </head>
 
 <body>
@@ -106,59 +33,89 @@
     <div class="barra-navegacion">
         <ul>
             <li><a href="#salud">Salud</a></li>
+            <hr class="linea">
             <li><a href="#estetica">Estética</a></li>
+            <hr class="linea">
             <li><a href="#vacunacion">Vacunación</a></li>
         </ul>
     </div>
     <div id="salud">
-        <h3>Salud</h3>
+        <h3 class="subtitulos_servicios">Salud</h3>
         <div class="tarjetas" id="num_1">
             <h4>Consulta general</h4>
-            <button class="btn btn-primary botones">Solicitar</button>
+            <a href="citas.html" class="btn btn-primary botones">Solicitar</a>
         </div>
         <div class="tarjetas" id="num_2">
             <h4>Cardiología</h4>
-            <button class="btn btn-primary botones">Solicitar</button>           
+            <a href="citas.html" class="btn btn-primary botones">Solicitar</a>
         </div>
         <div class="tarjetas" id="num_3">
             <h4 style="margin-left: 15px;">Dentista</h4>
-            <button class="btn btn-primary botones">Solicitar</button>           
+            <a href="citas.html" class="btn btn-primary botones">Solicitar</a>
+        </div>
+        <div class="tarjetas" id="lista">
+            <ul>
+                <h6 class="mas_servicios">Más servicios: </h6>
+                <li><a href="citas.html">Cirugías</a></li>
+                <li><a href="citas.html">Ecografías</a></li>
+                <li><a href="citas.html">RX</a></li>
+            </ul>
         </div>
     </div>
     <div id="estetica">
-        <h3>Estética</h3>
+        <h3 class="subtitulos_servicios">Estética</h3>
         <div class="tarjetas" id="num_1">
-            <h4>Corte de cabello total </h4>
-            <button class="btn btn-primary botones">Solicitar</button>
+            <h4>Corte de uñas</h4>
+            <a href="citas.html" class="btn btn-primary botones">Solicitar</a>
         </div>
         <div class="tarjetas" id="num_2">
-            <h4>Corte de uñas</h4>
-            <button class="btn btn-primary botones">Solicitar</button>           
+            <h4>Corte de cabello</h4>
+            <a href="citas.html" class="btn btn-primary botones">Solicitar</a>
         </div>
         <div class="tarjetas" id="num_3">
-            <h4 style="margin-left: 15px;">Revisión de pulgas</h4>
-            <button class="btn btn-primary botones">Solicitar</button>           
+            <h4 style="margin-left: 15px;">Control de pulgas</h4>
+            <a href="citas.html" class="btn btn-primary botones">Solicitar</a>
+        </div>
+        <div class="tarjetas" id="lista">
+            <ul>
+                <h6 class="mas_servicios">Más servicios: </h6>
+                <li><a href="citas.html">Masajes relajantes</a></li>
+                <li><a href="citas.html">Limpieza de oídos</a></li>
+                <li><a href="citas.html">Baños</a></li>
+            </ul>
         </div>
     </div>
     <div id="vacunacion">
-        <h3>Vacunación</h3>
+        <h3 class="subtitulos_servicios">Vacunación</h3>
         <div class="tarjetas" id="num_1">
-            <h4>Corte de cabello total </h4>
-            <button class="btn btn-primary botones">Solicitar</button>
+            <h4>Moquillo canino</h4>
+            <a href="citas.html" class="btn btn-primary botones">Solicitar</a>
         </div>
         <div class="tarjetas" id="num_2">
-            <h4>Corte de uñas</h4>
-            <button class="btn btn-primary botones">Solicitar</button>           
+            <h4>Hepatitis canina crónica (HCC)</h4>
+            <a href="citas.html" class="btn btn-primary botones">Solicitar</a>
         </div>
         <div class="tarjetas" id="num_3">
-            <h4 style="margin-left: 15px;">Revisión de pulgas</h4>
-            <button class="btn btn-primary botones">Solicitar</button>           
+            <h4 style="margin-left: 15px;">Parvovirus</h4>
+            <a href="citas.html" class="btn btn-primary botones">Solicitar</a>
+        </div>
+        <div class="tarjetas" id="lista">
+            <ul>
+                <h6 class="mas_servicios">Más servicios: </h6>
+                <li><a href="citas.html">Leptospirosis</a></li>
+                <li><a href="citas.html">Antirrábica</a></li>
+                <li><a href="citas.html">Parainfluenza</a></li>
+                <li><a href="citas.html">Enfermedad de Lyme</a></li>
+
+            </ul>
         </div>
     </div>
 
     <footer>
         <h6>+Cotitas S.A.</h6>
         <h6>Todos los derechos reservados ®</h6>
+        <h6><i class="bi bi-whatsapp"></i>+57 304 5318796 <i class="bi bi-instagram"></i> mas_cotitas</h6>
+
     </footer>
 
     <script src="../js/script.js"></script>
