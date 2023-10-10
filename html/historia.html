@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="../css/styles.css" rel="stylesheet">
+    <style>
+        .contenido {
+            padding: 10px;
+            column-count: 3;
+        }
+
+        h3 {
+            margin-left: 10px;
+        }
+
+        .pet_banner {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    </style>
     <title>+Cotitas - Historia</title>
 </head>
 
@@ -17,118 +34,45 @@
     <div>
         <nav aria-label="breadcrumb" id="miga">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-              <li class="breadcrumb-item">Quiénes somos</li>
-              <li class="breadcrumb-item active" aria-current="page">Historia</li>
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item">Quiénes somos</li>
+                <li class="breadcrumb-item active" aria-current="page">Historia</li>
             </ol>
         </nav>
     </div>
 
-    <main>
-        <section>
-        </section>
-        <section>
-        </section>
-        <section>
-        </section>
-    </main>
+    <h1 class="titulos_apartados">Historia</h1>
+    <h3>Nuestra Historia: El Cimiento de Nuestro Éxito en la Veterinaria</h3>
+    <div class="contenido">
+        En el corazón de nuestra clínica veterinaria yace una historia de dedicación, innovación y un compromiso
+        inquebrantable con el bienestar animal. Nuestro viaje no solo ha estado marcado por la excelencia en la atención
+        veterinaria, sino también por asociaciones estratégicas con patrocinadores líderes en la industria, como
+        Pedigree, DogChow, Whiskas y otros. Estos patrocinadores han sido un pilar fundamental en el desarrollo y éxito
+        de nuestro sistema de veterinaria.
 
-    <!-- The Modal Login-->
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Iniciar sesión</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-        
-                <!-- Modal body -->
-                <div class="container mt-3">
-                    <h2>Ingresa tus datos:</h2>
-                    <form action="" class="mb-3">
-                        <div class="input-group mb-3 mt-3">
-                            <div class="input-group-text">
-                                <i class="bi bi-person-circle"></i>
-                            </div>
-                            <input id="usuario" type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Nombre de usuario">
-                        </div>
-                          
-                          <div class="input-group mb-3">
-                            <div class="input-group-text">
-                                <i class="bi bi-key"></i>
-                            </div>
-                            <input id="contraseña" type="password" class="form-control" aria-label="Text input with radio button" placeholder="Contraseña">
-                        </div>
-                        <div class="form-check mb-3">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" name="remember"> Recuérdame
-                            </label>
-                        </div>
-                        <input type="submit" class="btn btn-primary" value="Iniciar sesión" onclick="validarUsuario()">
-                    </form>
-                </div>
-            </div>
-        </div>
+        Los Primeros Pasos: Creciendo Juntos
+
+        Cuando comenzamos nuestra clínica, nuestra visión era simple pero ambiciosa: brindar la mejor atención posible a
+        las mascotas y sus dueños. En esos primeros días, enfrentamos desafíos que solo podían ser superados con la
+        ayuda de socios comprometidos. Pedigree fue uno de los primeros en creer en nuestra visión. Su apoyo no solo se
+        tradujo en recursos financieros, sino en un compromiso compartido con la salud y la nutrición animal. Juntos,
+        desarrollamos prácticas de alimentación que han impactado positivamente en innumerables mascotas y han sentado
+        las bases para nuestra evolución continua.
     </div>
+    <div class="pet_banner">
+        <img src="../images/pets-banner.jpg" alt="" width="1400px" height="450px">
+    </div>
+    <div class="contenido">
+        Hoy en día, nuestra clínica es un testimonio de la dedicación, la innovación y la pasión por el bienestar
+        animal. Nuestra alianza con Pedigree, DogChow, Whiskas y otros patrocinadores líderes en la industria sigue
+        siendo un componente crítico de nuestro éxito. Sus recursos, conocimientos y productos de alta calidad nos han
+        permitido crecer y mejorar constantemente. Continuamos aprendiendo y evolucionando para brindar el mejor cuidado
+        posible a las mascotas y sus dueños.
 
-    <!-- The Modal Register-->
-    <div class="modal" id="myModal2">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Regístrate</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-        
-                <!-- Modal body -->
-                <div class="container mb-3">
-                    <h2>Crea tu cuenta:</h2>
-                    <form action="" class="mb-3">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
-                            <input type="text" class="form-control" placeholder="Nombre de usuario">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
-                            <input type="text" class="form-control" placeholder="Nombres">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
-                            <input type="text" class="form-control" placeholder="Apellidos">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-calendar"></i></i></span>
-                            <input type="date" class="form-control" placeholder="Fecha de nacimiento">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-gender-ambiguous"></i></i></i></span>
-                            <select class="form-select" id="inputGroupSelect01">
-                                <option selected>Género</option>
-                                <option value="1">Masculino</option>
-                                <option value="2">Femenino</option>
-                                <option value="3">Otro</option>
-                              </select>
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-key"></i></span>
-                            <input type="password" class="form-control" placeholder="Contraseña"><i class="bi bi-eye"></i>
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-key"></i></span>
-                            <input type="password" class="form-control" placeholder="Confirmar contraseña"><i class="bi bi-eye"></i>
-                        </div>
-                        <div class="form-check mb-3">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" name="remember"> Recuérdame
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-primary" id="contraseña=">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        Nuestra historia está intrínsecamente ligada a nuestros patrocinadores y a su compromiso con la salud animal.
+        Desde nuestros humildes comienzos hasta nuestros actuales logros, reconocemos la importancia de estas alianzas
+        estratégicas. A medida que avanzamos hacia el futuro, seguimos honrando nuestro compromiso con el bienestar
+        animal, respaldados por la experiencia y el apoyo de nuestros valiosos patrocinadores.
     </div>
 
     <footer>
@@ -136,41 +80,8 @@
         <h6>Todos los derechos reservados ®</h6>
     </footer>
 
-    <div class="offcanvas offcanvas-start" id="demo">
-        <div class="offcanvas-header">
-          <h1 class="offcanvas-title">Menú</h1>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                <h5>Productos</h5>
-                <ul>
-                    <li><a class="nav-link" href="alimento.html">Alimento</a></li>
-                    <li><a class="nav-link" href="delimpieza.html">De limpieza</a></li>
-                    <li><a class="nav-link" href="vacunas.html">Vacunas</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5>Servicios</h5>
-                <ul>
-                    <li><a class="nav-link" href="salud.html">Salud</a></li>
-                    <li><a class="nav-link" href="estetica.html">Estética</a></li>
-                    <li><a class="nav-link" href="vacunacion.html">Vacunación</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5>Quiénes somos</h5>
-                <ul>
-                    <li><a class="nav-link" href="nuestroequipo.html">Nuestro equipo</a></li>
-                    <li><a class="nav-link" href="historia.html">Historia</a></li>
-                    <li><a class="nav-link" href="nuestroequipo.html">Nuestro equipo</a></li>
-                </ul>
-            </div>
-            <h5><a class="nav-link" href="contactanos.html">Contáctanos</a></h5>
-          
-        </div>
-    </div>
 
     <script src="../js/script.js"></script>
 </body>
+
 </html>
